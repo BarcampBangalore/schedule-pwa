@@ -1,5 +1,628 @@
+/*HomeMenu time display*/
+.rotate {
+     /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    transform: rotate(270deg);
+     float:  left;
+     margin-top: 18px;
+     text-decoration: none;
+     font-size: 15px;
+}
+
+/*about Page Title*/
+.site-title {
+  font : italic 49px monospace;
+margin-bottom: 20px; font-weight: 300;}
+.panel-body{
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400px;
+    padding:15px;
+}
+
+/*Main Screen drop down menu icon*/
+.material-icons{
+  color: orange;
+}
+
+
+/*Dropdown list background*/
+.mdl-navigation__link {
+    background-color:#FF8B18;
+}
+
+
+
+/*HomeMenu*/
+.panel {
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/*--------------------------------------
+ Sets the actionable area for the gaadiexp
+ including a label for usability
+--------------------------------------*/
+.content-box {margin-top:20px;}
+.gaadiexp,
+.gaadiexp:after,
+.gaadiexp *,
+.gaadiexp *:before,
+.gaadiexp *:after,
+.header-nav *,
+.header-nav *:before,
+.header-nav *:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gaadiexp {
+    cursor: pointer;
+    height: 60px;
+    margin-bottom: 0;
+    width: 60px;
+    z-index: 9001;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #E16C05;
+    border-bottom: 1px solid #fff;
+}
+
+.gaadiexp:after {
+    bottom: 7px;
+    color: #FFFFFF;
+    content: 'Menu';
+    font-size: 13px;
+    font-weight: 300;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+
+/*--------------------------------------
+ Creates the look of the gaadiexp icon
+ using the inner span and pseudo-elements
+--------------------------------------*/
+
+.gaadiexp span,
+.gaadiexp span:before,
+.gaadiexp span:after {
+    background: #FFFFFF;
+    border-radius: 0.2em;
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 22px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 40px;
+}
+
+
+/* Reset the left and create the pseudo-element */
+
+.gaadiexp span:before,
+.gaadiexp span:after {
+    content: '';
+    left: 0;
+}
+
+
+/* Get rid of more on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp:after {
+    content: '';
+}
+
+
+/* Get rid of the middle bar on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span {
+    height: 0;
+    width: 0;
+}
+
+.sidebarservices {
+  position: absolute;
+  width: 80%;
+
+}
+.sidebarservices .head {
+  text-align:left;
+  font-size:15pt;
+  background:gray;
+  color:black;
+}
+.head:hover {
+  background:gray !important;
+  cursor: initial;
+}
+.sidebarservices li {
+  list-style:none;
+  margin:2px 4px;
+  text-align:left;
+  cursor:pointer;
+  }
+
+  .fixed{
+    background-color: #FF8B18;
+    padding: 20px 0 20px 40px;
+    border-width: 0.5px;
+    border-style:  ridge;
+  }
+
+  .slots{
+    background-color: #3AFFDE;
+    padding: 20px 0 20px 40px;
+    border-width: 0.5px;
+border-style:  ridge;
+
+  }
+
+  .techlash{
+    background-color: #FC2E2E;
+    padding: 20px 0 20px 40px;
+    border-width: 0.5px;
+    border-style:  ridge;
+  }
+
+
+.sidebarservices li a {
+  font-size: 20px;
+  text-decoration:none;
+  color:black!important;
+  font-family: Century Gothic, sans-seri;
+  }
+  .fixed:hover {
+    background:#C9CFCE;
+    color:black;
+  }
+
+  .slots:hover {
+    background:#C9CFCE;
+    color:black;
+  }
+  .techlash:hover {
+    background:#C9CFCE;
+    color:black;
+  }
+
+/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:before,
+.gaadiexp-check:checked + .gaadiexp span:after {
+    top: 6px;
+}
+
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 136, 204, 0.9);
+}
+
+.gaadiexp-check:checked + .gaadiexp {
+    width: 100px;
+}
+
+.gaadiexp-check:checked + .gaadiexp:after {
+    bottom: 18px;
+    content: 'BCB';
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#mobile-nav {
+    left: -9999px;
+    position: fixed;
+    top: 0;
+}
+
+.header-nav ul li a:active,
+.header-nav ul li a:focus,
+.header-nav ul li a:hover,
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.fixed-nav {
+    background-image: url(https://barcampbangalore.com/planning/wp-content/uploads/2017/11/bcb-logo.png);
+    background-position: center;
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.header-nav {
+    float: middle;
+    height: 60px;
+    position: relative;
+    width: 50%;
+
+}
+
+.header-nav ul {
+    background: #fff;
+
+    height: calc(100vh - 60px);
+    list-style: none;
+    margin: 0;
+    overflow-y: auto;
+    padding: 10px 0 0 0;
+    position: absolute;
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    width: 200px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
+    top: 100%;
+    z-index: 1;
+}
+
+.gaadiexp-check:checked ~ .header-nav ul {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.header-nav ul li {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.header-nav ul li a {
+color: rbga(0,0,0.79);
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    line-height: 24px;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 12px 60px 12px 12px;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+
+/*CSS FOR MenuBar.js*/
+.mdl-layout__header{
+    background-image: url(https://barcampbangalore.com/planning/wp-content/uploads/2017/11/bcb-logo.png);
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+    z-index: 9000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-position: center;
+}
+
+/*--------------------------------------
+ Sets the actionable area for the gaadiexp
+ including a label for usability
+--------------------------------------*/
+
+.header-nav1 *,
+.header-nav1 *:before,
+.header-nav1 *:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 136, 204, 0.9);
+}
+
+
+#mobile-nav {
+    left: -9999px;
+    position: fixed;
+    top: 0;
+}
+
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.header-nav1 {
+    float: middle;
+    height: 60px;
+    position: relative;
+    width: 50%;
+
+}
+
+
+/*lOGIN pAGE*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    background: #f1f1f1;
+    min-width: 0;
+    color: #444;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.fa-wordpress:before {
+    content: "\f09a";
+}
+btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+
+btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+
+btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+
+btn-wordpress{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-wordpress:hover,.btn-wordpress:focus,.btn-wordpress:active,.btn-wordpress.active,.open .dropdown-toggle.btn-wordpress{color:#fff;background-color:#F1F8FB;border-color:rgba(0,0,0,0.2)}
+.btn-wordpress:active,.btn-wordpress.active,.open .dropdown-toggle.btn-wordpress{background-image:none}
+.btn-wordpress.disabled,.btn-wordpress[disabled],fieldset[disabled] .btn-wordpress,.btn-wordpress.disabled:hover,.btn-wordpress[disabled]:hover,fieldset[disabled] .btn-wordpress:hover,.btn-wordpress.disabled:focus,.btn-wordpress[disabled]:focus,fieldset[disabled] .btn-wordpress:focus,.btn-wordpress.disabled:active,.btn-wordpress[disabled]:active,fieldset[disabled] .btn-wordpress:active,.btn-wordpress.disabled.active,.btn-wordpress[disabled].active,fieldset[disabled] .btn-wordpress.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+
+
+/*Slot1 */
+.sidebarservices2 {
+  position: relative;
+  width: 80%;
+  float: center;
+  border:1px solid;
+}
+.sidebarservices2 .head2 {
+  text-align:left;
+  font-size:15px;
+  background:#EAE2D6;
+
+  color:black;
+}
+.head2:hover {
+  background:#EAE2D6 !important;
+  cursor: initial;
+}
+.sidebarservices2 li {
+  list-style:none;
+  margin:5px 10px;
+
+  text-align:left;
+  padding: 20px 0 20px 40px;
+  border-radius:5px 5px;
+  cursor:pointer;
+  }
+
+.sidebarservices2 li a {
+  text-decoration:none;
+  color:black!important;
+  font-family:sans-serif;
+  }
+  .sidebarservices2 li:hover {
+    background:white;
+    color:black;
+  }
+  .fixed2{
+    text-decoration:none;
+    background-color:#FF8C00;
+    color:black!important;
+    font-family:sans-serif;
+    font-size: 20px;
+    align:  center;
+    }
+    .dynamic2{
+      background-color: skyblue;
+      text-decoration:none;
+      color:black!important;
+      font-family:sans-serif;
+      font-size: 20px;
+    }
+    .flex {
+  display: flex;
+  justify-content: center;
+}
+.buttons2{
+  background-color: skyblue;
+  text-decoration:none;
+  color:black!important;
+  font-family:sans-serif;
+  font-size: 15px;
+}
+.flex-item + .flex-item {
+  margin-left: 10px;
+}
+
+.button2{
+  margin: 20px;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  .name2 {
+     margin-bottom: 0.5cm;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
