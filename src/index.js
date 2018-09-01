@@ -6,7 +6,3 @@ import registerServiceWorker from './registerServiceWorker'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()
-
-window.addEventListener('beforeinstallprompt', e => {
-  e.prompt()
-})
