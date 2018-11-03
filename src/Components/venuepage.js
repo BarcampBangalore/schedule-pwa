@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class VenuePage extends Component{
-  render(){
-    return(
+class VenuePage extends Component {
+  render () {
+    return (
       <div>
         <h1>Venue</h1>
       </div>
@@ -10,4 +10,4 @@ class VenuePage extends Component{
   }
 }
 
-export default VenuePage;
+export default VenuePage

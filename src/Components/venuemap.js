@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class VenueMap extends Component{
-  render(){
-    return(
+class VenueMap extends Component {
+  render () {
+    return (
       <div>
         <h1>VenueMap</h1>
       </div>
@@ -10,4 +10,4 @@ class VenueMap extends Component{
   }
 }
 
-export default VenueMap;
+export default VenueMap

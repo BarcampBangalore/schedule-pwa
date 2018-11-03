@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class UpdatePage extends Component{
-  render(){
-    return(
+class UpdatePage extends Component {
+  render () {
+    return (
       <div>
         <h1>Updates</h1>
       </div>
@@ -10,4 +10,4 @@ class UpdatePage extends Component{
   }
 }
 
-export default UpdatePage;
+export default UpdatePage

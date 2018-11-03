@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class SharePage extends Component{
-  render(){
-    return(
+class SharePage extends Component {
+  render () {
+    return (
       <div>
         <h1>Share</h1>
       </div>
@@ -10,4 +10,4 @@ class SharePage extends Component{
   }
 }
 
-export default SharePage;
+export default SharePage
