@@ -1,22 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
-import {BrowserRouter} from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
+import 'react-mdl/extra/material.css'
+import 'react-mdl/extra/material.js'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <BrowserRouter>
-  <App />
+    <App />
   </BrowserRouter>,
-   document.getElementById('root'));
-registerServiceWorker();
+  document.getElementById('root'))
+registerServiceWorker()
 
-
-
-/*LoginPage */
+/* LoginPage */
 
 /**
  * Function that gets the data of the profile in case
@@ -26,7 +24,7 @@ registerServiceWorker();
  * A not existing key in localstorage return null
  *
  */
-function getLocalProfile(callback){
+/* function getLocalProfile(callback){
 
     var profileName        = localStorage.getItem("PROFILE_NAME");
     var profileReAuthEmail = localStorage.getItem("PROFILE_REAUTH_EMAIL");
@@ -36,13 +34,13 @@ function getLocalProfile(callback){
            {
         callback(profileName, profileReAuthEmail);
     }
-}
+} */
 
 /**
  * Main function that load the profile if exists
  * in localstorage
  */
-function loadProfile() {
+/* function loadProfile() {
     if(!supportsHTML5Storage()) { return false; }
     // we have to provide to the callback the basic
     // information to set the profile
@@ -54,7 +52,7 @@ function loadProfile() {
         ("#inputEmail").hide();
         ("#remember").hide();
     });
-}
+} */
 
 /**
  * function that checks if the browser supports HTML5
@@ -62,13 +60,13 @@ function loadProfile() {
  *
  * @returns {boolean}
  */
-function supportsHTML5Storage() {
+/* function supportsHTML5Storage() {
     try {
         return 'localStorage' in window && window['localStorage'] !== null;
     } catch (e) {
         return false;
     }
-}
+} */
 
 /**
  * Test data. This data will be safe by the web app
@@ -78,9 +76,9 @@ function supportsHTML5Storage() {
  *
  * @returns {boolean}
  */
-function testLocalStorageData() {
+/* function testLocalStorageData() {
     if(!supportsHTML5Storage()) { return false; }
 
     localStorage.setItem("PROFILE_NAME", "César Izquierdo Tello");
     localStorage.setItem("PROFILE_REAUTH_EMAIL", "oneaccount@gmail.com");
-}
+} */

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Layout,Header,Textfield,Drawer,Navigation,Content,HeaderRow} from 'react-mdl';
-import MaterialIcon,{colorPallet} from 'material-icons-react';
+import {Layout,Header,Drawer,Navigation,Content} from 'react-mdl';
+//import MaterialIcon,{colorPallet} from 'material-icons-react';
 import Main from './Main';
 import {Link} from 'react-router-dom';
 
