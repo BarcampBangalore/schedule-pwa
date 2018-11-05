@@ -1,12 +1,12 @@
 import React from 'react'
 import LoginPage from './LoginPage'
-import AgendaPage from './AgendaPage'
+import agendapage from './agendapage'
 import UpdatePage from './UpdatePage'
 import TweetPage from './TweetPage'
 import VenuePage from './VenuePage'
 import VenueMap from './VenueMap'
 import SharePage from './SharePage'
-import AboutPage from './AboutPage'
+import aboutpage from './aboutpage'
 import HomeMenu from './HomeMenu'
 import slot from './slot'
 // import Registration from './Registration';
@@ -16,7 +16,7 @@ import slot from './slot'
 // import Slot3 from './Slot3';
 // import TechLash from './TechLash';
 import { Route } from 'react-router-dom'
-import sessionPage from './session'
+import session from './session'
 
 const Main = () => (
   <div>
@@ -27,14 +27,11 @@ const Main = () => (
     <Route exact path='/TweetPage' component={TweetPage} />
     <Route exact path='/VenuePage' component={VenuePage} />
     <Route exact path='/VenueMap' component={VenueMap} />
-    <Route exact path='/AgendaPage' component={AgendaPage} />
+    <Route exact path='/agendapage' component={agendapage} />
     <Route exact path='/SharePage' component={SharePage} />
-    <Route exact path='/AboutPage' component={AboutPage} />
+    <Route exact path='/aboutpage' component={aboutpage} />
     <Route exact path='/slot/:index' component={slot} />
-    <Route
-      exact
-      path='/slot/:slotIndex/session/:sessionIndex'
-      component={sessionPage}
+    <Route exact path='/slot/:index/sessions/:sessionIndex' component={session}
     />
   </div>
 )

@@ -581,7 +581,7 @@ btn-wordpress{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.
     color:black!important;
     font-family:sans-serif;
     font-size: 20px;
-    align:  center;
+    box-align :  center;
     }
     .dynamic2{
       background-color: skyblue;

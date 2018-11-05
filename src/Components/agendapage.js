@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class AgendaPage extends Component {
+class agendapage extends Component {
   render () {
     return (
       <div>
@@ -10,4 +10,4 @@ class AgendaPage extends Component {
   }
 }
 
-export default AgendaPage
+export default agendapage
