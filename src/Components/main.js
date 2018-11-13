@@ -17,6 +17,7 @@ import slot from './slot'
 // import TechLash from './TechLash';
 import { Route } from 'react-router-dom'
 import session from './session'
+import details from './details'
 
 const Main = () => (
   <div>
@@ -31,7 +32,8 @@ const Main = () => (
     <Route exact path='/SharePage' component={SharePage} />
     <Route exact path='/aboutpage' component={aboutpage} />
     <Route exact path='/slot/:index' component={slot} />
-    <Route exact path='/slot/:index/sessions/:sessionIndex' component={session}
+    <Route exact path='/slot/:index/sessions/:sessionIndex' component={session}/>
+    <Route exact path='/slot/:index/sessions/:sessionIndex/details/:detailIndex'component={details}
     />
   </div>
 )

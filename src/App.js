@@ -3,7 +3,7 @@ import MenuBar from './Components/MenuBar'
 // import {Layout,Header,Textfield,Drawer,Navigation,Content,HeaderRow} from 'react-mdl';
 import './App.css'
 
-class App extends Component {
+class App extends React.Component {
   render () {
     return (
       <div>
