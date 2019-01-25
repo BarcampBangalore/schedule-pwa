@@ -1,13 +1,13 @@
 import React from 'react'
-import LoginPage from './LoginPage'
+import LoginPage from './loginpage'
 import agendapage from './agendapage'
-import UpdatePage from './UpdatePage'
-import TweetPage from './TweetPage'
-import VenuePage from './VenuePage'
-import VenueMap from './VenueMap'
-import SharePage from './SharePage'
+import UpdatePage from './updatepage'
+import TweetPage from './tweetpage'
+import VenuePage from './venuepage'
+import VenueMap from './venuemap'
+import SharePage from './sharepage'
 import aboutpage from './aboutpage'
-import HomeMenu from './HomeMenu'
+import HomeMenu from './homemenu'
 import slot from './slot'
 // import Registration from './Registration';
 // import Introduction from './Introduction';
@@ -32,9 +32,8 @@ const Main = () => (
     <Route exact path='/SharePage' component={SharePage} />
     <Route exact path='/aboutpage' component={aboutpage} />
     <Route exact path='/slot/:index' component={slot} />
-    <Route exact path='/slot/:index/sessions/:sessionIndex' component={session}/>
-    <Route exact path='/slot/:index/sessions/:sessionIndex/details/:detailIndex'component={details}
-    />
+    <Route exact path='/session/:index/:sessionIndex' component={session}/>
+    
   </div>
 )
 

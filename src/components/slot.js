@@ -10,7 +10,7 @@ const slot = ({ match }) => {
       
       {sessions.map((session, sessionIndex) => (
         <div>
-          <Link to={`/slot/${match.params.index}/session/${sessionIndex}`}>
+          <Link to={`/session/${match.params.index}/${sessionIndex}`}>
           <li>
           <div class={session.type}>{session.title}
            <div class={session.type}>{session.presenter}</div>                                      

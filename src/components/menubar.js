@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Layout, Header, Drawer, Navigation, Content } from 'react-mdl'
 // import MaterialIcon,{colorPallet} from 'material-icons-react'
-import Main from './Main'
+import Main from './main'
 import { Link } from 'react-router-dom'
 
 class MenuBar extends Component {

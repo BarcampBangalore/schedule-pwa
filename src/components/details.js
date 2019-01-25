@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//  import { Route, Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import data from "../bcb.json";
 import slotPage from "./slot";
 export default class details extends React.Component {
