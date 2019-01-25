@@ -169,7 +169,7 @@ margin-bottom: 20px; font-weight: 300;}
     background-color: #3AFFDE;
     padding: 20px 0 20px 40px;
     border-width: 0.5px;
-border-style:  ridge;
+    border-style:  ridge;
 
   }
 
@@ -180,7 +180,12 @@ border-style:  ridge;
     border-style:  ridge;
   }
 
-
+    .detail{
+        background-color:#3AFFDE;
+        padding: 20px 0 20px 40px;
+        border-width: 0.5px;
+        border-style:  ridge;
+    }
 .sidebarservices li a {
   font-size: 20px;
   text-decoration:none;

@@ -20,6 +20,8 @@
         "name": "Slot 1",
         "id": 3,
         "sessions": [{
+            "type": "detail",
+            "details":[{
             "id": 2852,
             "title": "Big Data Basics",
             "description": "Big Data, Data Science &amp; Analytics. Data Analytics Life cycle. Analytics technology &amp; tools – Map Reduce, Hadoop. Methods to apply this knowledge to real work business challenges. <a href=\"http://barcampbangalore.org/bcb/bcb14/big-data-basics\">Read more</a>",
@@ -31,7 +33,8 @@
             "category": "Technology",
             "level": "Intro/101",
             "color": "#AA8E5D"
-        }, {
+        }],
+            "type": "detail",
             "id": 2799,
             "title": "Making Music with Free Software Tools",
             "description": "Ever wanted to create some cool music or tunes? Let&#8217;s do this! Software Instruments:  Audacity and Hydrogen&#8230; and some web apps and Chrome extensions. No expertise of  Sa Re Ga Ma Pa needed. What to Bring:  Laptop or Smartphone. Any tune you are/were/have been humming. Level: Beginner <a href=\"http://barcampbangalore.org/bcb/bcb14/making-music-with-free-software-tools\">Read more</a>",
@@ -44,6 +47,7 @@
             "level": "Intro/101",
             "color": "#756480"
         }, {
+            "type": "detail",
             "id": 2930,
             "title": "Evaluating startup &amp; technology events!",
             "description": "There are more than 100 startup and technology events happening across the country every week with more than a dozen taking place in Bangalore. From an informal meetup to a pitching session to a mighty conference, how to decide which one is worth your time and money? What all parameter should be considered to take [&hellip;] <a href=\"http://barcampbangalore.org/bcb/bcb14/evaluating-startup-technology-events-happening-around-you-to-attend\">Read more</a>",
@@ -55,7 +59,7 @@
             "category": "Entrepreneurship",
             "level": "Discussion",
             "color": "#EB9E58"
-        }, {
+        }, { "type": "detail",
             "id": 2974,
             "title": "Selenium Simple Test &#8211; a python web framework for functional Testing",
             "description": "To write functional test cases for web app, selenium is one of the well known tool across the industry. SST or Selenium Simple Test is framework, written on top of Selenium Web driver, which uses python to write test cases. This is how, one can avoid using Java and still can write efficient web automation <a href=\"http://barcampbangalore.org/bcb/bcb14/selenium-simple-test-a-python-web-framework-for-functional-testing\">Read more</a>",
@@ -91,7 +95,7 @@
             "category": "Bangalore & Lifestyle",
             "level": "Discussion",
             "color": "#7CB4F1"
-        }]
+        }] 
     }, {
         "type": "session",
         "startTime": "1030",

@@ -17,18 +17,12 @@ export default class session extends Component {
 
   session = ({ match }) => {
   const details = data.slot[match.params.index].session[match.params.sessionIndex].details;
-
-  return (
+ return (
     <div>
       <h1>{match.params.index}</h1>
-      {details.map((detail, detailIndex) => (
+      {details.map((details, detailIndex) => (
         <div>
-          <Link to={`/slot/${match.params.index}/session/${match.params.sessionIndex}/details/${detailIndex}`}>
-          <li>
-          <div class={detail.name}>{detail.title}</div>
-          <div class={detail.title}>{detail.presenter} </div>
-          <div class={detail.title}>{detail.location}</div>
-          </li>   
+          <Link to={`/slot/${match.params.index}/session/${match.params.sessionIndex}/details/${detailIndex}`}>  
           </Link>
         </div>
       ))}
