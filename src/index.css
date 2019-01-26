@@ -190,21 +190,6 @@
     font-family: Century Gothic, sans-seri;
 }
 
-.fixed:hover {
-    background: #C9CFCE;
-    color: black;
-}
-
-.slots:hover {
-    background: #C9CFCE;
-    color: black;
-}
-
-.techlash:hover {
-    background: #C9CFCE;
-    color: black;
-}
-
 /* Moves the top and bottom bars to the middle on action (IE9 or higher) */
 
 .gaadiexp-check:checked+.gaadiexp span:before, .gaadiexp-check:checked+.gaadiexp span:after {
@@ -758,4 +743,21 @@ btn-wordpress {
     object-fit: cover;
     object-position: center right;
     vertical-align: middle;
+}
+
+.slot_row {
+    padding: 10px 10px 10px 20px;
+    color: black;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.slot_title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a:visited, a:hover {
+    text-decoration: none;
 }

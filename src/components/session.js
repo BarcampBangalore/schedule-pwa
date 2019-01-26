@@ -24,7 +24,7 @@ const session = ({ match }) => {
   const session = data.slots[match.params.index].sessions[match.params.sessionIndex];
   console.log(session);
   return (
-    <div class="sessiondetails">
+    <div className="sessiondetails">
       <div style={{
         display: "flex",
         flexdirection: "row",
@@ -32,20 +32,20 @@ const session = ({ match }) => {
       }}>
         <img src={session.photo} class="image--cover" />
         <a href={session.permalink} target="__blank">
-          <h1 class="title">{unescapeHTML(session.title)}</h1>
+          <h1 className="title">{unescapeHTML(session.title)}</h1>
         </a>
       </div>
       <hr />
-      <div class="presenter">
+      <div className="presenter">
         By : {session.presenter}
       </div>
-      <div class="description" dangerouslySetInnerHTML={{ __html: session.description }}>
+      <div className="description" dangerouslySetInnerHTML={{ __html: session.description }}>
 
       </div>
-      <div class="session_time">
+      <div className="session_time">
         Session time : {session.time}
       </div>
-      <div class="session_location">
+      <div className="session_location">
         Location : {session.location}
       </div>
     </div>
