@@ -25,11 +25,11 @@ const Main = () => (
     <Route exact path='/agendapage' component={agendapage} />
     <Route exact path='/SharePage' component={SharePage} />
     <Route exact path='/aboutpage' component={aboutpage} />
-    
+
     {/* For the session and slot navigation*/}
     <Route exact path='/slot/:index' component={slot} />
-    <Route exact path='/session/:index/:sessionIndex' component={session}/>
-    
+    <Route exact path='/session/:index/:sessionIndex' component={session} />
+
   </div>
 )
 
