@@ -25,30 +25,32 @@ const session = ({ match }) => {
   console.log(session);
   return (
     <div className="sessiondetails">
-      <div style={{marginbottom: "10px", 
-    display: "flex",
-    flexdirection: "row",
-    valign: "center"}}>
+      <div style={{
+        display: "flex",
+        flexdirection: "row",
+        valign: "center"
+      }}>
         <img src={session.photo} class="image--cover" />
-          <a href={session.permalink} target="__blank">
-            <h1 className="title">{unescapeHTML(session.title)}</h1>
-          </a>
+        <a href={session.permalink} target="__blank">
+          <h1 className="title">{unescapeHTML(session.title)}</h1>
+        </a>
       </div>
-        <div className="presenter">
-          By : {session.presenter}
-        </div>
-        <div className="description" dangerouslySetInnerHTML={{ __html: session.description }}>
+      <hr />
+      <div className="presenter">
+        By : {session.presenter}
+      </div>
+      <div className="description" dangerouslySetInnerHTML={{ __html: session.description }}>
 
-        </div>
-        <div className="session_time">
-          Session time : {session.time}
-        </div>
-        <div className="session_location">
-          Location : {session.location}
-        </div>
       </div>
-      );
-    };
-    
-    
+      <div className="session_time">
+        Session time : {session.time}
+      </div>
+      <div className="session_location">
+        Location : {session.location}
+      </div>
+    </div>
+  );
+};
+
+
 export default session;
