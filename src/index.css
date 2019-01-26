@@ -28,7 +28,7 @@
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 400px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 /*Main Screen drop down menu icon*/
@@ -132,7 +132,8 @@
 
 .sidebarservices {
     position: absolute;
-    width: 80%;
+    width: 100%;
+    padding: 0px;
 }
 
 .sidebarservices .head {
@@ -379,6 +380,10 @@ body, html {
     background-repeat: no-repeat;
 }
 
+.slotscontainer {
+    padding: 0px;
+    margin: 0px;
+}
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
@@ -400,8 +405,8 @@ body, html {
 .card {
     background-color: #F7F7F7;
     /* just in case there no content*/
-    padding: 20px 25px 30px;
-    margin: 0 auto 25px;
+    /* padding: 20px 25px 30px; */
+    /* margin: 0 auto 25px; */
     margin-top: 50px;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
@@ -683,9 +688,9 @@ btn-wordpress {
     font-size: 15px;
 }
 
-.flex-item+.flex-item {
+/* .flex-item+.flex-item {
     margin-left: 10px;
-}
+} */
 
 .button2 {
     margin: 20px;

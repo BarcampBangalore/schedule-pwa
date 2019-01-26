@@ -8,7 +8,6 @@ class MenuBar extends Component {
   render () {
     return (
       /* Always shows a header, even in smaller screens. */
-      <div style={{ height: '800px', position: 'relative' }}>
         <Layout fixedHeader>
           <Header title='                          '>
             <Navigation>
@@ -32,7 +31,6 @@ class MenuBar extends Component {
             <Main />
           </Content>
         </Layout>
-      </div>
     )
   }
 }
