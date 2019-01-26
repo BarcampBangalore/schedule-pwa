@@ -4,7 +4,7 @@ import data from "../bcb.json";
 
 var escapeChars = { lt: '<', gt: '>', quot: '"', apos: "'", amp: '&' };
 
-function unescapeHTML(str) {//modified from underscore.string and string.js
+function unescapeHTML(str) {
   return str.replace(/\&([^;]+);/g, function (entity, entityCode) {
     var match;
 
