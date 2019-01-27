@@ -5,24 +5,28 @@ import data from '../bcb.json'
 class HomeMenu extends Component {
   render() {
     return (
-      <div class='main-content'>
-        <div class='container slotscontainer'>
-          <ul class='sidebarservices'>
+      <div className='main-content'>
+        <div className='container slotscontainer'>
+          <ul className='sidebarservices'>
             {data.slots.map((slot, index) => {
               if (slot.type === 'session') {
                 return (
                   <li>
                     <Link to={`/slot/${index}`}>
-                      <div class='rotate'>{slot.startTime}</div>
-                      <div class={slot.type}>{slot.name}</div>
+                      <div className='rotate'>{slot.startTime}</div>
+                      <div className={slot.type}>{slot.name}</div>
                     </Link>
                   </li>
                 )
               } else {
                 return (
                   <li>
-                    <div class='rotate'>{slot.startTime}</div>
-                    <div class={slot.type}>{slot.name}</div>
+                    <div className='rotate'>{slot.startTime}</div>
+                    <div className={slot.type}>
+                      <div className="fixed_slot_name">{slot.name}</div>
+                      <div className="fixed_slot_desc">{slot.description}</div>
+                    </div>
+
                   </li>
                 )
               }
