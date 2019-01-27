@@ -29,11 +29,14 @@ const slot = ({ match }) => {
 
       {sessions.map((session, sessionIndex) => (
         <Link to={`/session/${match.params.index}/${sessionIndex}`}>
-          <li className="slot_row" style={{backgroundColor: session.color}}>
-            <div className="slot_title">{unescapeHTML(session.title)}</div>
-            <div className="slot_session_presenter">By : {session.presenter}</div>
-            <div className="slot_session_location">At : {session.location} </div>
-          </li>
+          <div className="slot_row" style={{ backgroundColor: session.color }}>
+            <img src={session.photo} class="image--cover" />
+            <div className="slot_info">
+              <div className="slot_title">{unescapeHTML(session.title)}</div>
+              <div className="slot_session_presenter">By : {session.presenter}</div>
+              <div className="slot_session_location">At : {session.location} </div>
+            </div>
+          </div>
         </Link>
       ))}
     </div>

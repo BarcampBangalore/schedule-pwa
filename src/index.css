@@ -369,6 +369,7 @@ body, html {
     padding: 0px;
     margin: 0px;
 }
+
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
@@ -746,10 +747,13 @@ btn-wordpress {
 }
 
 .slot_row {
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
     color: black;
     border: 1px solid;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
 }
 
 .slot_title {
@@ -760,4 +764,8 @@ btn-wordpress {
 
 a:visited, a:hover {
     text-decoration: none;
+}
+
+.slot_info {
+    padding-left: 10px;
 }
