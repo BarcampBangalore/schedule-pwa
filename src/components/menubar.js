@@ -14,10 +14,6 @@ class MenuBar extends Component {
         </Header>
         <Drawer title='BCB'>
           <Navigation>
-            <Link to='/LoginPage'>Login</Link>
-            <Link to='/agendapage'>Agenda</Link>
-            <Link to='/UpdatePage'>Updates</Link>
-            <Link to='/TweetPage'>Tweets</Link>
             <Link to='/VenuePage'>Venue</Link>
             <Link to='/VenueMap'>Venue Map</Link>
             <Link to='/SharePage'>Share</Link>
