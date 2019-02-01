@@ -13,7 +13,6 @@
     float: left;
     margin-top: 18px;
     text-decoration: none;
-    font-size: 15px;
     vertical-align: center;
 }
 
@@ -157,10 +156,11 @@
 }
 
 .fixed {
-    background-color: #FF8B18;
+    background-image: linear-gradient(to right top, #f29b4a, #f3a649, #f4b149, #f3bc4a, #f2c74c);
     padding: 20px 0 20px 40px;
     border-width: 0.5px;
     border-style: ridge;
+    font-family: "Lato";
 }
 
 .fixed_slot_name {
@@ -173,7 +173,7 @@
 }
 
 .session {
-    background-color: #3AFFDE;
+    background-image: linear-gradient(to right top, #f2c74c, #f4cd61, #f5d475, #f7da89, #f8e09c);
     padding: 20px 0 20px 40px;
     border-width: 0.5px;
     border-style: ridge;
@@ -194,10 +194,13 @@
 }
 
 .sidebarservices li a {
-    font-size: 15px;
     text-decoration: none;
-    color: black!important;
-    /* font-family: Century Gothic, sans-seri; */
+    color: rgba(0, 0, 0, 0.87)!important;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato";
+    line-height: 24px;
+    letter-spacing: 0;
 }
 
 /* Moves the top and bottom bars to the middle on action (IE9 or higher) */
@@ -302,7 +305,8 @@
 /*CSS FOR MenuBar.js*/
 
 .mdl-layout__header {
-    background-image: url(https://barcampbangalore.com/planning/wp-content/uploads/2017/11/bcb-logo.png);
+    background-color: #595959 !important;
+    background-image: url(https://barcampbangalore.com/bcb/wp-content/themes/NeoBCBTest/images/BCB-LOGO-02.png);
     background-size: auto 60px;
     background-repeat: no-repeat;
     height: 60px;
@@ -357,10 +361,11 @@ body {
     background: #f1f1f1;
     min-width: 0;
     color: #444;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 13px;
     line-height: 1.4em;
 }
+
 
 /*
  * Specific styles of signin component
@@ -373,6 +378,7 @@ body {
 body, html {
     height: 100%;
     background-repeat: no-repeat;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .slotscontainer {
@@ -646,7 +652,7 @@ btn-wordpress {
 .sidebarservices2 li a {
     text-decoration: none;
     color: black!important;
-    font-family: sans-serif;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .sidebarservices2 li:hover {
