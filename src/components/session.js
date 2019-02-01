@@ -48,6 +48,9 @@ const session = ({ match }) => {
       <div className="session_location">
         Location : {session.location}
       </div>
+      <a href={require("./images/" + session.location.toLowerCase() + ".png")} >
+        <img src={require("./images/" + session.location.toLowerCase() + ".png")} width="100%" />
+      </a>
     </div>
   );
 };
