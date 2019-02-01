@@ -43,6 +43,12 @@
     background-color: #FF8B18;
 }
 
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #222!important;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
 /*HomeMenu*/
 
 .panel {
