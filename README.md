@@ -1,3 +1,5 @@
+[![Netlify Deploy](https://img.shields.io/badge/netlify-deployed-brightgreen.svg)](https://bcbschedule.netlify.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Test edit.
