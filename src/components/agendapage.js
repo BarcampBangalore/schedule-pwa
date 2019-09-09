@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class agendapage extends Component {
-  render () {
+  render() {
     return (
       <div>
         <h1>Agenda</h1>
       </div>
-    )
+    );
   }
 }
 
-export default agendapage
+export default agendapage;
