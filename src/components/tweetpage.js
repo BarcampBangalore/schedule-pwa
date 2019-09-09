@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class TweetPage extends Component {
-  render () {
+  render() {
     return (
       <div>
         <h1>Tweets</h1>
       </div>
-    )
+    );
   }
 }
 
-export default TweetPage
+export default TweetPage;
